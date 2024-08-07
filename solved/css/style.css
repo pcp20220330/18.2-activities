@@ -189,30 +189,40 @@ h4 {
   #navigation {
     display: none;
   }
+
   .icons {
     margin-left: auto;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:800px) {
   #headline {
     position: static;
     margin: 20px;
   }
+
   #heroGrid {
     grid-template-areas:
     "featuredProduct featuredProduct"
-    "secondaryProduct CTA";
+    "secondaryProduct CTA"
   }
+
   #categoryGrid {
     grid-template-rows: 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "bookcases"
-      "bedroom"
-      "patio"
-      "couches"
-      "desks"
-    ;
+    "bookcases"
+    "bedroom"
+    "patio"
+    "couches"
+    "desks";
   }
+}
+
+@media only all and (max-width:1000px) and (min-width:600px) {
+
+  body {
+    background-color: blue;
+  }
+
 }
